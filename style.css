@@ -1,0 +1,185 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  
+}
+
+nav{
+  display: flex;
+}
+#assetslogo{
+  width: 240%;
+}
+.kids{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  background-color: white;
+  background-size: cover;
+  padding-left: 60px;
+  width: 10%;
+}
+#oyelo{
+  background-color: rgb(254,202,42);
+}
+.firstrow{
+  padding-left: 40px;
+  padding-top: px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  
+}
+
+ 
+  
+/* 
+.mainfirstrow{
+  display: flex;
+} */
+.cart{
+  display: flex;
+  padding-left: 75%;
+  align-items: center;
+}
+.cartlogo{
+  width: 20%;
+  /* height: 40%; */
+}
+.carttext{
+  font-size: 15px;
+}
+.kwbackground{
+  width: 100%;
+  padding-top: 10px;
+}
+/* .discovertect{
+  font-size: 20px;
+  padding-top: 0px;}
+  */
+.book1{
+  width: 150px;
+  /* height: 300px; */
+  padding-top:10px;
+}
+.thistext{
+  font-size: 15px;
+  padding-top: 2px;
+}
+.ryantext{
+  color: rgb(128,129,127);
+  font-size: 14px;
+  padding-top: 10px;
+}
+.subparentdiv1{
+  display: flex;
+  /* align-items: center; */
+  align-items: center ;
+  padding-top: 10px;
+  justify-content: space-between;
+  
+}
+#discovertext{
+  font-size: 20px;
+  padding-left: 90px;
+  padding-top: 100px;
+
+}
+#firstbackground{
+  background-image: url(assets/kw-background.png);
+  background-size: cover;
+  /* height: 100%; */
+  color: white;
+  font-size: 50px;
+  padding-left: 57px;
+  line-height: 70px;
+  padding-top: 50px;
+  padding-bottom: 55px;
+}
+/* //newtext// */
+#newtext{
+  font-size: 20px;
+}
+.add1{
+  background-color: rgb(97,150,255);
+  border-radius: 5px;
+  color: white;
+  padding-left: 1%;
+  width: 50px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  border-color: rgb(97,150,255) ;
+  justify-content: space-between;
+
+}
+.addcartlogo1{
+  width: 35%;
+
+}
+.button{
+  padding-left: 10px;
+  
+
+}
+.number{
+  font-size: 20px;
+}
+.firstrowsecondcolumnphotos,
+.firstrowthirdcolumnphotos,
+.firstrowfourthcolumnphotos,
+.firstrowfifthcolumnphotos,
+.firstrowsixthcolumnphotos{
+  padding-left: 0px;
+}
+.mainrow{
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: space-between; */
+}
+.secondrowtext{
+  margin-left: 23px;
+  font-size: 20px;
+}
+.secondrowmain{
+  padding-top: 90px;
+  padding-left: 72px;
+}
+.book11,
+.book12,
+.book13,
+.book14{
+  padding-top: 10px;
+  width: 265px;
+}
+.krishtiimg{
+  width: 80%;
+  border-radius:50%;
+  height: 90px;
+  margin-top: 10px;
+}
+.footerphoto{
+  padding-left: 80px;
+  padding-top: 10px;
+  
+}
+.footer{
+  border: 1px solid black;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  background-color: black;
+  color: white;
+  margin-top: 150px;
+ 
+}
+.footertext{
+  font-size: 13px;
+  padding-top: 20px;
+  padding-left: 60%;
+}
+.textmohan{
+margin-bottom: 10px;
+}
