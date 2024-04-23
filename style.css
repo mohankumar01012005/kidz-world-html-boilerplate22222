@@ -1,185 +1,271 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Noto+Sans:ital@1&family=Poppins:wght@300;400&family=Roboto:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Noto+Sans:ital@1&family=Poppins:wght@300;400&family=Roboto:wght@700;900&family=Rubik:wght@600&display=swap');
 *{
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
-
+.flex{
+    display: flex;
+}
 nav{
-  display: flex;
+    justify-content: space-between;
+    padding:30px 50px 2px 70px ;
+    align-items: center;
 }
-#assetslogo{
-  width: 240%;
+.distance {
+    padding-top: 20px;
 }
-.kids{
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  background-color: white;
-  background-size: cover;
-  padding-left: 60px;
-  width: 10%;
+.logo {
+    width: 150px;
+    padding-left: 5px;
 }
-#oyelo{
-  background-color: rgb(254,202,42);
+.cartdiv{
+    
+    padding: 0px 0px 10px 45px;
+    font-family: 'Roboto';
+    width: 220px;
 }
-.firstrow{
-  padding-left: 40px;
-  padding-top: px;
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-
-  
-}
-
- 
-  
-/* 
-.mainfirstrow{
-  display: flex;
-} */
 .cart{
-  display: flex;
-  padding-left: 75%;
-  align-items: center;
+    width: 30px;
 }
-.cartlogo{
-  width: 20%;
-  /* height: 40%; */
+h1 {
+    font-size: 80px;
+    font-weight: 300;
 }
-.carttext{
-  font-size: 15px;
+#Bigtext {
+    position: relative;
+    top: 10%;
+    left: 4.5%;
+    color: white;       
 }
-.kwbackground{
-  width: 100%;
-  padding-top: 10px;
+.kidsworld {
+    background-image: url("assets/kw-background.png");
+    width: 100%;
+    height: 500px;
+    background-size: 100% 500px;
+    color: white;
 }
-/* .discovertect{
-  font-size: 20px;
-  padding-top: 0px;}
-  */
-.book1{
-  width: 150px;
-  /* height: 300px; */
-  padding-top:10px;
+
+.Books,.Games,.Crafts{
+    justify-content: space-around;
 }
-.thistext{
-  font-size: 15px;
-  padding-top: 2px;
+.Books{
+    padding: 0px 66px;
+    justify-content: space-between;
 }
-.ryantext{
-  color: rgb(128,129,127);
-  font-size: 14px;
-  padding-top: 10px;
+.Books img{
+    width: 180px;
 }
-.subparentdiv1{
-  display: flex;
-  /* align-items: center; */
-  align-items: center ;
-  padding-top: 10px;
-  justify-content: space-between;
+.Games img,.Crafts img{
+    width: 240px;
+}
+.Sideheading{
+    padding: 40px 0px 15px 70px;
+}
+.icon{
+    background-color: hsl(220,100%,69%);
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 300;
+    padding: 5px;
+    font-family: 'Rubik', sans-serif;
+}
+.icon:hover , .cart:hover   {
+    cursor: pointer;
+}
+.icon img{
+    width: 20px;
+}
+
+.space-between{
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.space-between p {
+    font-weight: 900;
+    font-size: 18px;
+    font-weight: bolder;
+}
+h4 {
+    font-weight: lighter;
+    color: gray;
+    font-size: 14px;
+    padding: 8px 0px 18px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+h3 {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Styling footer  */
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    padding: 0px 66px;
+    text-align:right;
+}
+#pic{
+    border-radius: 50%;
+    width: 160px;
+    background-color: aliceblue;
+    height:160px;
+    background-size: 100% 100%;
+    margin: 15px;
+}
+#Footertext{
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0  ;
+    }
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 15px 20px; 
+    }
+
+    .logo {
+        width: 180px;
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 36px; 
+    }
+
+    #Bigtext {
+        top: 5%;
+        left: 4%;
+        text-align: left; 
+        width: 140px;
+    }
+
+    .kidsworld {
+        background-size: 100% 100%;
+        height: 300px; 
+    }
+
+    .Books, .Games, .Crafts {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .Sideheading{
+        padding: 40px 0px 0px 0px;
+        font-size: 25px;
+        text-align: center;
+    }
+    h3,h4{
+        text-align: center;
+    }
+    .cart{
+        width: 40px;
+    }
+    .cartdiv{
+        padding-right: 0px;
+        width: 190px;
+    }
+    .Books, .Games, .book, .game {
+        margin-bottom: 20px; 
+        padding: 20px;  
+    }
+    .Crafts , .handcraft ,.Games, .game{
+        margin-bottom: 20px; 
+        padding: 10px;  
+    }
+    .book1{
+        padding-bottom: 40px;
+    }
+    .Books img, .Games img, .Crafts img {
+        width: 100%; 
+        padding: 10px;
+    }
+
+    .icon {
+        flex-direction: row;
+        align-items: center;
+        font-size: 22px; 
+        width: 80px;
+        height: 40px;
+        padding: 5px;
+    }
   
-}
-#discovertext{
-  font-size: 20px;
-  padding-left: 90px;
-  padding-top: 100px;
+    
+    .space-between {
+        align-items: center; 
+        justify-content: space-between;
+        padding: 0px 10px 0px 12px;
+    }
 
-}
-#firstbackground{
-  background-image: url(assets/kw-background.png);
-  background-size: cover;
-  /* height: 100%; */
-  color: white;
-  font-size: 50px;
-  padding-left: 57px;
-  line-height: 70px;
-  padding-top: 50px;
-  padding-bottom: 55px;
-}
-/* //newtext// */
-#newtext{
-  font-size: 20px;
-}
-.add1{
-  background-color: rgb(97,150,255);
-  border-radius: 5px;
-  color: white;
-  padding-left: 1%;
-  width: 50px;
-  height: 25px;
-  display: flex;
-  align-items: center;
-  border-color: rgb(97,150,255) ;
-  justify-content: space-between;
+    .space-between p {
+        font-size: 20px;
+    }
 
-}
-.addcartlogo1{
-  width: 35%;
+    .footer {
+        padding: 20px; 
+    }
+    h2{
+        text-align: center;
+        font-size: xx-large;
+    }
+    .footer>p{
+        text-align: right;
+    }
+    .footer  h3{
+        text-align: right;
+    }
 
-}
-.button{
-  padding-left: 10px;
-  
+    #pic {
+        width: 110px; 
+        height: 110px;
+        margin: 14px;
+    }
 
+   
+    #Footertext {
+        font-size: 14px;
+        color: white;
+    }
 }
-.number{
-  font-size: 20px;
-}
-.firstrowsecondcolumnphotos,
-.firstrowthirdcolumnphotos,
-.firstrowfourthcolumnphotos,
-.firstrowfifthcolumnphotos,
-.firstrowsixthcolumnphotos{
-  padding-left: 0px;
-}
-.mainrow{
-  display: flex;
-  justify-content: space-around;
-  /* justify-content: space-between; */
-}
-.secondrowtext{
-  margin-left: 23px;
-  font-size: 20px;
-}
-.secondrowmain{
-  padding-top: 90px;
-  padding-left: 72px;
-}
-.book11,
-.book12,
-.book13,
-.book14{
-  padding-top: 10px;
-  width: 265px;
-}
-.krishtiimg{
-  width: 80%;
-  border-radius:50%;
-  height: 90px;
-  margin-top: 10px;
-}
-.footerphoto{
-  padding-left: 80px;
-  padding-top: 10px;
-  
-}
-.footer{
-  border: 1px solid black;
-  width: 100%;
-  height: 140px;
-  display: flex;
-  background-color: black;
-  color: white;
-  margin-top: 150px;
- 
-}
-.footertext{
-  font-size: 13px;
-  padding-top: 20px;
-  padding-left: 60%;
-}
-.textmohan{
-margin-bottom: 10px;
-}
+@media (max-width: 1024px) and (min-width: 768px){
+    *{
+        margin: 0;
+        padding: 0  ;
+    }
+    .Books , .Games , .Crafts {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .space-between {
+        align-items: center; 
+        justify-content: space-between;
+        padding: 0px 10px 0px 12px;
+    }
+    .icon {
+        flex-direction: row;
+        align-items: center;
+        font-size: 22px; 
+        width: 80px;
+        height: 40px;
+        padding: 5px;
+    }
+    .Books img, .Games img, .Crafts img {
+        width: 100%; 
+        padding: 10px;
+    }
+} 
